@@ -1,4 +1,4 @@
-.button {
+.eui__button {
   background-color: #202124;
   color: white;
   font-size: 20px;
@@ -7,7 +7,7 @@
   cursor: pointer;
 }
 
-.button__outline {
+.eui__button__outline {
   background-color: white;
   color: #202124;
   border: 1px solid #202124;
