@@ -1,0 +1,18 @@
+.button {
+  background-color: #202124;
+  color: white;
+  font-size: 20px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button__outline {
+  background-color: white;
+  color: #202124;
+  border: 1px solid #202124;
+  font-size: 20px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
