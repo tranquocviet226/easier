@@ -7,6 +7,8 @@ const Input = ({ placeholder }) => {
   )
 }
 
+export default Input
+
 Input.protoTypes = {
   placeholder: PropTypes.string,
 }
@@ -14,5 +16,3 @@ Input.protoTypes = {
 Input.defaultProps = {
   placeholder: '',
 }
-
-export default Input

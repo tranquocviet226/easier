@@ -1,4 +1,4 @@
-import Button from './components/button';
+import { Button } from "easier_lib";
 
 function App() {
   return (
