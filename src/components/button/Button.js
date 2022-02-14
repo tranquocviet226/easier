@@ -12,7 +12,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={` ${outline ? 'button__outline' : 'button'} ${className}`}
+      className={` ${outline ? 'eui__button__outline' : 'eui__button'} ${className}`}
       onClick={onClick}
       disabled={disabled}
       {...rest}
