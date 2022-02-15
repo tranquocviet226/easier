@@ -13,9 +13,24 @@
     "react-scripts": "^5.0.0",
     "sass": "^1.49.7"
   },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/node-logger": "^6.4.19",
+    "@storybook/preset-create-react-app": "^4.0.1",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "webpack": "^5.68.0"
+  },
   "scripts": {
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -27,6 +42,18 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   }
 }

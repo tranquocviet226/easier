@@ -1,13 +1,14 @@
-.button {
-  background-color: #202124;
-  color: white;
+.eui_button {
   font-size: 20px;
   padding: 8px 24px;
   border-radius: 20px;
   cursor: pointer;
 
+  &--primary {
+    background-color: #0000ff;
+  }
+
   &--outline {
-    background-color: white;
     color: #202124;
     border: 1px solid #202124;
   }

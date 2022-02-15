@@ -1,41 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './styles.scss'
+import './style.scss'
 
-const Button = ({
-  children,
-  onClick,
-  disabled,
-  outline,
-  className,
-  ...rest
-}) => {
-  return (
-    <button
-      className={className}
-      onClick={onClick}
-      disabled={disabled}
-      {...rest}
-    >
-      {children}
-    </button>
-  )
+/**
+ * XXXXXXXXXXXXXXXXXXXX
+ */
+export const Button = ({ className, children }) => {
+  return <button className={className}>{children}</button>
 }
 
-Button.protoTypes = {
+Button.propTypes = {
+  /**
+   * YYYYYYYYYYYYYYYYYYYY
+   */
   children: PropTypes.element,
-  onClick: PropTypes.func,
-  disabled: PropTypes.bool,
-  outline: PropTypes.bool,
+  /**
+   * ZZZZZZZZZZZZZZZZZZZZZ
+   */
   className: PropTypes.string,
 }
 
 Button.defaultProps = {
   children: <></>,
-  onClick: () => {},
-  disabled: false,
-  outline: false,
   className: '',
 }
-
-export default Button
