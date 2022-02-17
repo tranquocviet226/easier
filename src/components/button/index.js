@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import './style.scss'
 
 /**
  * XXXXXXXXXXXXXXXXXXXX
  */
-export const Button = ({ className, children }) => {
-  return <button className={className}>{children}</button>
+const Button = ({ className, children }) => {
+  const [isClicked, setIsClicked] = useState(false)
+
+  return (
+    <button className={className} onClick={() => setIsClicked(!isClicked)}>
+      {isClicked ? 'Clicked' : children}
+    </button>
+  )
 }
 
 Button.propTypes = {
   /**
    * YYYYYYYYYYYYYYYYYYYY
    */
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   /**
    * ZZZZZZZZZZZZZZZZZZZZZ
    */
@@ -24,3 +30,5 @@ Button.defaultProps = {
   children: <></>,
   className: '',
 }
+
+export default Button
